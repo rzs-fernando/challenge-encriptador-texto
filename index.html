@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/encryp.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="cajaTitulo">
+        <img id = logo src="img/logo.png" alt="">
+        <h1 id="titulo">Challenge I: Encriptador de Texto</h1>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="container">
+        <div class="encriptarTexto">
+          <textarea
+            name="textoArea"
+            class="txtArea"
+            id="cifrarTexto"
+            cols="30"
+            rows="10"
+            placeholder="Ingresa el texto aqui"
+          ></textarea>
+  
+          <div class="leyenda">
+            <p><i class="fa-solid fa-circle-exclamation"></i> Sólo encripta letras minúsculas,sin acentos.</p>
+          </div>
+          
+          <div class="btns">
+            <button class="encriptar-btn" type="button" id="btn-encriptar">
+              <i class="fa-solid fa-lock"></i> Encriptar
+            </button>
+            <button class="desencriptar-btn" type="button" id="btn-desencriptar">
+              <i class="fa-solid fa-unlock"></i> Desencriptar
+            </button>
+          </div>
+
+        </div>
+  
+        <div class="encriptadoCtn">
+          <img src="img/thunder.png" alt="" id="imagen" />
+          
+          <div class="mensaje-encriptado" id="msj-encriptado">
+            <h2 id="msj-entrada">Ningún mensaje fue encontrado</h2>
+            <p id="descripcion">Ingresa el texto que desees encriptar o desencriptar</p>
+          </div>
+        </div>
+        
+        <div class="areaMensaje" id="areams">
+          <textarea name="resultado" id="encriptadoTxt" class="info-msj"></textarea>
+          <button class="copiarTx" type="button" id="btn-copiar"><i class="fa-solid fa-copy"></i> Copiar Texto</button>
+        </div>        
+        
+      
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-d">
+        <p>Designed by: Fernando Sáenz</p>
+        <div class="iconos-redes">
+          <a href="https://www.linkedin.com/in/fernando-isc/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/rzs-fernando"><i class="fa-brands fa-github"></i></a>
+        </div>
+      
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

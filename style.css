@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&display=swap");
+body {
+  width: 100%;
+  background: #0d7377;
+  margin: 0;
+  height: 0;
+}
+header {
+  width: 100%;
+  background: #03001c;
+}
+.cajaTitulo {
+  width: 940px;
+  position: relative;
+}
+#logo {
+  float: inherit;
+  margin-top: 14px;
+  margin-left: 1%;
+  margin-right: 30%;
+  box-sizing: border-box;
+}
+#titulo {
+  font-family: "Acme";
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.container {
+  position: relative;
+  width: 98vw;
+  height: 100vh;
+}
+.txtArea {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  left: 15%;
+  top: 15%;
+  padding: 20px;
+  border: none;
+  resize: none;
+  line-height: 150%;
+  border-radius: 18px;
+  background-color: #bccef8;
+  box-sizing: border-box;
+}
+.txtArea::placeholder {
+  color: black;
+}
+.txtArea:focus,
+.txtArea:active {
+  border: none;
+  outline: none;
+}
+.leyenda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 16%;
+  top: 77%;
+}
+.leyenda p {
+  color: white;
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 140%;
+  opacity: 1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 1% 0;
+  position: absolute;
+  width: 80%;
+  left: 15%;
+  top: 83%;
+  margin-right: 10px;
+}
+.encriptar-btn {
+  font-family: "Varela Round";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  color: white;
+  background-color: #03001c;
+  border: 2px solid black;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  margin-right: 19px;
+  cursor: pointer;
+  transition: 0.1s all;
+}
+.desencriptar-btn {
+  font-family: "Varela Round";
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background: #03001c;
+  border: 2px solid black;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.1s all;
+}
+.encriptar-btn:hover,
+.desencriptar-btn:hover {
+  background-color: #236ea0;
+  color: white;
+  border: 2px solid white;
+  transform: scale(0.9);
+}
+.encriptadoCtn {
+  background: #bccef8;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 30%;
+  height: 90%;
+  left: 63%;
+  top: 5%;
+  box-shadow: 0px 25px 30px -6px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+}
+.mensaje-encriptado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  gap: 15%;
+  position: absolute;
+  width: 100%;
+  top: 54%;
+  text-align: center;
+}
+.mensaje-encriptado h2 {
+  font-family: "Dosis";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  width: 60%;
+  text-align: center;
+  color: black;
+}
+.mensaje-encriptado p {
+  font-family: "Varela Round";
+  font-style: normal;
+  font-size: 15px;
+  width: 80%;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  line-height: 150%;
+}
+.encriptadoCtn img {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 15%;
+}
+#areams {
+  display: none;
+}
+.areaMensaje textarea {
+  background: #bccef8;
+  display: flex;
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  justify-content: center;
+  width: 30%;
+  height: 70%;
+  left: 63%;
+  top: 15%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.copiarTx {
+  font-family: "Varela Round";
+  font-weight: bold;
+  background: #e5e5e5;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  width: 30%;
+  height: 6%;
+  left: 63%;
+  top: 85%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.copiarTx:hover {
+  background-color: green;
+  opacity: 0.5;
+  color: #fff;
+}
+.info-msj {
+  font-family: "Karla";
+  font-size: 30px;
+  color: #495077;
+  resize: none;
+  border: none;
+  outline: none;
+}
+.footer-d {
+  text-align: center;
+  background: #03001c;
+}
+.footer-d p {
+  font-family: "Varela Round";
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 2rem;
+  margin: 5px;
+  color: white;
+}
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  top: 30px;
+  gap: 10px;
+  margin: 5px;
+}
+.iconos-redes a:hover {
+  color: yellow;
+}
+/* crear Responsive Desing */
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .encriptarTexto {
+    width: 100%;
+  }
+  .txtArea {
+    width: 80%;
+    height: 35%;
+    left: 10%;
+    top: 5%;
+  }
+  .leyenda {
+    width: 80%;
+    left: 14%;
+    top: 44%;
+  }
+  .leyenda p {
+    font-size: 15px;
+  }
+  .btns {
+    width: 80%;
+    left: 10%;
+    top: 47%;
+  }
+  .encriptar-btn,
+  .desencriptar-btn {
+    width: 50%;
+    border-radius: 15px;
+  }
+  .encriptar-btn:hover,
+  .desencriptar-btn:hover {
+    margin: 0.5%;
+    width: 47%;
+    padding: 1.6%;
+  }
+  .encriptadoCtn {
+    width: 80%;
+    height: 35%;
+    left: 10%;
+    top: 55%;
+  }
+  .mensaje-encriptado {
+    width: 100%;
+    top: 65%;
+  }
+  .encriptadoCtn img {
+    width: 48%;
+    height: 60%;
+  }
+  .areaMensaje textarea {
+    width: 79%;
+    height: 33%;
+    left: 10%;
+    top: 55.5%;
+    border-radius: 25px;
+  }
+  .areaMensaje button {
+    text-align: center;
+    width: 25%;
+    height: 3%;
+  }
+}
