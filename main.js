@@ -42,6 +42,15 @@ function desencriptarTexto() {
   var cifrarTexto = cifrarTexto.replace(/ai/gim, "a");
   var cifrarTexto = cifrarTexto.replace(/ufat/gim, "u");
 
+  document.getElementById("imagen").style.display = "none";
+  document.getElementById("msj-entrada").style.display = "none";
+  document.getElementById("descripcion").style.display = "none";
+
+  document.getElementById("btn-copiar").style.display = "show";
+  document.getElementById("btn-copiar").style.display = "inherit";
+  document.getElementById("areams").style.display = "block";
+
+
   document.getElementById("encriptadoTxt").innerHTML = cifrarTexto;
 }
 
